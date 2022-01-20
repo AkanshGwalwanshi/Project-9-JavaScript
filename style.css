@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("bg-img.jpg");
+    background-size: contain;
+}
+.calculator{
+    width: 320px;
+    height: 520px;
+    background-color: white;
+    box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.result{
+    height: 120px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: gray;
+}
+#output{
+    text-align: right;
+    height: 50px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+.keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px; 
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: white;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active{
+    background-color: rgb(209, 209, 209);
+}
+.number:active{
+    background-color: rgb(235, 235, 235);
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: rgb(0, 140, 255);
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: orange;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: pink;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: rebeccapurple;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: royalblue;
+}
+
+@media(max-width:450px){
+    .calculator{
+        width: 300px;
+        height: 500px;
+    }
+    .keyboard{
+        height: 380px;
+    }
+    .operator, .number, .empty{
+        width: 50px;
+        height: 50px; 
+        margin: 10px;
+        float: left;
+        border-radius: 50%;
+        border-width: 0;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
